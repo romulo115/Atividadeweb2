@@ -3,7 +3,8 @@ class usuario {
   private  $nome;
   private  $sobrenome;
 
-function _construct($n, $s){
+function _construct($n, $s)
+{
   $this->nome = $n;
   $this->sobrenome = $s;
 }
@@ -21,16 +22,17 @@ function _construct($n, $s){
   }
 
    public function email(){
-    return (">> Email enviado");
+    echo (">> Email enviado");
    }
 
   public function registrar(){
-    return (">> Registrado");
-    return $this->email ;
+    echo (">> Registrado");
+    return $this;
   }
 
   public function ola (){
-  echo ("ola, $nome $sobrenome");
-  return $this->registrar;
+  echo ('ola, $nome $sobrenome \n ');
+  
+  return $this;
   }
 }

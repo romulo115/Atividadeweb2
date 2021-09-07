@@ -13,4 +13,4 @@ $usuarioRambo = new usuario ('Sylvester','Stallone');
 $usuarioRambo->ola();
 
 $usuarioJair = new usuario ('Jair', 'Bolsonaro');
-$usuarioJair->ola();
+$usuarioJair->ola()->registrar()->email();
